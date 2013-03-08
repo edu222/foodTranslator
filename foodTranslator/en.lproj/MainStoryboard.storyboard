@@ -1,23 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Food Translator View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="foodTranslatorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hM4-G5-0UH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="nd2-8I-UoF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="b7i-un-wC3"/>
+                                    <outlet property="delegate" destination="2" id="tQg-Oh-oyO"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ingredient-Translator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1g-E5-zyp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4Ai-gw-gTM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Español: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTt-dc-5m3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="3LK-5h-1vv"/>
+                                    <constraint firstAttribute="width" constant="97" id="7ff-mg-5UY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="English:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-tz-dea">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="nada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COV-EU-VFK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="3ey-GA-TZ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="nothing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htZ-cS-VxP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="F2t-BZ-3EC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="basil.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-mQ-zgq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="dL7-lj-KgE"/>
+                                    <constraint firstAttribute="height" constant="79" id="th3-Lb-Xm7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="spanish.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pxb-Tu-tRS">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="3HQ-ex-mw8"/>
+                                    <constraint firstAttribute="height" constant="29" id="77k-WB-d60"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="english.png" translatesAutoresizingMaskIntoConstraints="NO" id="np6-ep-YIH">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="j61-Qa-gqJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="htZ-cS-VxP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0ey-1Z-L6H"/>
+                            <constraint firstItem="hM4-G5-0UH" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="2je-FZ-93s"/>
+                            <constraint firstItem="np6-ep-YIH" firstAttribute="bottom" secondItem="e2W-tz-dea" secondAttribute="bottom" type="default" id="4gX-TH-sNL"/>
+                            <constraint firstItem="n1g-E5-zyp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4nd-b4-qtj"/>
+                            <constraint firstItem="np6-ep-YIH" firstAttribute="trailing" secondItem="Pxb-Tu-tRS" secondAttribute="trailing" type="default" id="9Hh-8Y-0hS"/>
+                            <constraint firstItem="GTt-dc-5m3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="142" id="DLp-Up-uvn"/>
+                            <constraint firstItem="Dd7-mQ-zgq" firstAttribute="top" secondItem="3" secondAttribute="top" constant="46" id="DNe-Sd-EpW"/>
+                            <constraint firstItem="Pxb-Tu-tRS" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Kql-MJ-wa7"/>
+                            <constraint firstItem="htZ-cS-VxP" firstAttribute="leading" secondItem="COV-EU-VFK" secondAttribute="leading" type="default" id="Lpr-wM-t20"/>
+                            <constraint firstItem="COV-EU-VFK" firstAttribute="centerY" secondItem="Pxb-Tu-tRS" secondAttribute="centerY" type="default" id="NAU-GO-oOz"/>
+                            <constraint firstItem="np6-ep-YIH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="189" id="Sl3-Od-VgG"/>
+                            <constraint firstItem="n1g-E5-zyp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-14" id="TVW-FZ-Sgi"/>
+                            <constraint firstItem="GTt-dc-5m3" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="59" id="acB-eD-QsH"/>
+                            <constraint firstItem="hM4-G5-0UH" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="eCa-ai-f21"/>
+                            <constraint firstItem="n1g-E5-zyp" firstAttribute="trailing" secondItem="COV-EU-VFK" secondAttribute="trailing" type="default" id="fUN-7I-TCO"/>
+                            <constraint firstItem="Dd7-mQ-zgq" firstAttribute="centerX" secondItem="hM4-G5-0UH" secondAttribute="centerX" type="default" id="heV-AI-O1X"/>
+                            <constraint firstItem="hM4-G5-0UH" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="qmV-6x-mIs"/>
+                            <constraint firstItem="e2W-tz-dea" firstAttribute="leading" secondItem="GTt-dc-5m3" secondAttribute="leading" type="default" id="sPT-fc-H8C"/>
+                            <constraint firstItem="htZ-cS-VxP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="201" id="ypU-Tg-QFC"/>
+                            <constraint firstItem="Pxb-Tu-tRS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="146" id="z8V-xZ-2eh"/>
+                            <constraint firstItem="np6-ep-YIH" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zLz-0G-Y8S"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="english" destination="htZ-cS-VxP" id="NC0-yv-DOb"/>
+                        <outlet property="image" destination="Dd7-mQ-zgq" id="sNW-nc-kh2"/>
+                        <outlet property="picker" destination="hM4-G5-0UH" id="PDY-Bn-42u"/>
+                        <outlet property="spanish" destination="COV-EU-VFK" id="9we-Vx-Wek"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32" y="79"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="basil.png" width="256" height="256"/>
+        <image name="english.png" width="256" height="256"/>
+        <image name="spanish.png" width="256" height="256"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="foodTranslatorViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/foodTranslatorViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="english" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="picker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="spanish" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

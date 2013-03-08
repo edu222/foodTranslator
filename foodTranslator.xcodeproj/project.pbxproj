@@ -18,6 +18,9 @@
 		A0B6770216E9894100EFDE81 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B6770116E9894100EFDE81 /* Default-568h@2x.png */; };
 		A0B6770516E9894100EFDE81 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6770316E9894100EFDE81 /* MainStoryboard.storyboard */; };
 		A0B6770816E9894100EFDE81 /* foodTranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B6770716E9894100EFDE81 /* foodTranslatorViewController.m */; };
+		A0B6773F16EA9CDB00EFDE81 /* basil.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B6773D16EA9CDB00EFDE81 /* basil.png */; };
+		A0B6774016EA9CDB00EFDE81 /* spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B6773E16EA9CDB00EFDE81 /* spanish.png */; };
+		A0B6774216EA9D2300EFDE81 /* english.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B6774116EA9D2300EFDE81 /* english.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		A0B6770416E9894100EFDE81 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A0B6770616E9894100EFDE81 /* foodTranslatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foodTranslatorViewController.h; sourceTree = "<group>"; };
 		A0B6770716E9894100EFDE81 /* foodTranslatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodTranslatorViewController.m; sourceTree = "<group>"; };
+		A0B6773D16EA9CDB00EFDE81 /* basil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basil.png; sourceTree = "<group>"; };
+		A0B6773E16EA9CDB00EFDE81 /* spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanish.png; sourceTree = "<group>"; };
+		A0B6774116EA9D2300EFDE81 /* english.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = english.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				A0B676F416E9894100EFDE81 /* InfoPlist.strings */,
 				A0B676F716E9894100EFDE81 /* main.m */,
 				A0B676F916E9894100EFDE81 /* foodTranslator-Prefix.pch */,
+				A0B6773D16EA9CDB00EFDE81 /* basil.png */,
+				A0B6773E16EA9CDB00EFDE81 /* spanish.png */,
+				A0B6774116EA9D2300EFDE81 /* english.png */,
 				A0B676FD16E9894100EFDE81 /* Default.png */,
 				A0B676FF16E9894100EFDE81 /* Default@2x.png */,
 				A0B6770116E9894100EFDE81 /* Default-568h@2x.png */,
@@ -164,6 +173,9 @@
 				A0B6770016E9894100EFDE81 /* Default@2x.png in Resources */,
 				A0B6770216E9894100EFDE81 /* Default-568h@2x.png in Resources */,
 				A0B6770516E9894100EFDE81 /* MainStoryboard.storyboard in Resources */,
+				A0B6773F16EA9CDB00EFDE81 /* basil.png in Resources */,
+				A0B6774016EA9CDB00EFDE81 /* spanish.png in Resources */,
+				A0B6774216EA9D2300EFDE81 /* english.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 				A0B6770D16E9894100EFDE81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

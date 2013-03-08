@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface foodTranslatorViewController : UIViewController
+@interface foodTranslatorViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *spanish;
+
+@property (strong, nonatomic) IBOutlet UILabel *english;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+
+@property (strong, nonatomic) NSArray *englishArray;
+
+@property (strong, nonatomic) IBOutlet UIImageView *image;
 
 @end
